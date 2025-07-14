@@ -1,0 +1,560 @@
+@font-face {
+    font-family: logo;
+    src: url(fonts/Dancing\ Script.ttf);
+}
+
+@font-face {
+    font-family: headers;
+    src: url(fonts/merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: main-text;
+    src: url(fonts/open_sans/OpenSans-Regular.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+h1 {
+    color: black;
+}
+
+.text_logo:hover {
+    color: #CD4B71;
+}
+
+.header_titles {
+    margin-bottom: 2%;
+}
+
+.second_title {
+    text-align: center;
+}
+
+.main_divs {
+    display: flex;
+}
+
+.second_divs {
+    margin: 0 2%;
+}
+
+.section {
+    padding: 2% 0;
+}
+
+h2 {
+    font-family: headers;
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+
+button {
+    font-family: main-text;
+}
+
+section {
+    margin: 0 10%;
+    font-family: main-text;
+}
+
+.regImg {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.secondImg {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.thirdImg {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Carousel */
+.carousel {
+    display: block;
+    margin: auto;
+    position: relative;
+    height: 500px;
+    width: 80%;
+}
+
+.carousel_slide img, .carousel_slide2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.carousel_inner, .carousel_inner2 {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track, .carousel_track2 {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    height: 100%;
+}
+
+.carousel_slide, .carousel_slide2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_opacity img {
+    border-radius: 50px;
+    height: 500px;
+    width: 100%;
+}
+
+.carousel_slide h2, .carousel_slide2 h2 {
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+}
+
+.carousel_opacity {
+    opacity: 1;
+}
+
+.carousel_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+
+.carousel_btn img {
+    width: 90px;
+}
+
+.carousel__btn--left, .carousel__btn--left2 {
+    left: -100px;
+}
+
+.carousel__btn--right, .carousel__btn--right2 {
+    right: -100px;
+}
+
+.is_hidden {
+    display: none;
+}
+
+.arrow {
+    width: 40px;
+    transition: .4s;
+}
+
+.arrow:hover {
+    transform: rotate(-90deg);
+}
+
+.flex_right {
+    display: flex;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+/* Lodgings Display:None */
+.arrow1 {
+    display: none;
+    color: #000000;
+}
+
+.hover:hover .arrow1 {
+    display: block;
+}
+
+.hostels:hover .arrow {
+    transform: rotate(-90deg);
+}
+
+.resorts:hover .arrow {
+    transform: rotate(-90deg);
+}
+
+.hotels:hover .arrow {
+    transform: rotate(-90deg);
+}
+
+.beb:hover .arrow {
+    transform: rotate(-90deg);
+}
+
+.pSpacing {
+    margin-bottom: 2%;
+}
+
+.div_padding {
+    margin: 2% 0;
+}
+
+ul {
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #CD4B71;
+}
+
+/* Header */
+.indexHeader {
+    background-image: url(Pics_Videos/beach3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodgingHeader {
+    background-image: url(Pics_Videos/hotel2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entertainmentHeader {
+    background-image: url(Pics_Videos/clinton-mwebaze-uw5aA3zalt4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foodHeader {
+    background-image: url(Pics_Videos/food3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sightseeingHeader {
+    background-image: url(Pics_Videos/beach4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQHeader {
+    background-image: url(Pics_Videos/rock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_logo {
+    font-family: logo;
+}
+
+.headProfile {
+    display: flex;
+    justify-content: right;
+
+}
+
+.headProfile button, .my_btn {
+    align-content: center;
+    padding: 5px 20px;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: 10%;
+    font-size: 1.1em;
+    border-radius: 15px;
+    background-color: lightblue;
+    box-shadow: 3px 3px #80bbc4;
+    color: #000000;
+}
+
+.headProfile button:hover, .my_btn:hover {
+    background-color: rgb(151, 210, 229);
+    box-shadow: 3px 3px #6a9ba3;
+    cursor: pointer;
+}
+
+.profile {
+    width: 10%;
+}
+
+/* Nav */
+.navBar {
+    width: 100%;
+    margin-bottom: 700px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    font-family: main-text;
+    font-size: 1.3em;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+/* Welcome */
+#welcome {
+    text-align: center;
+    padding: 2% 10% 0 10%;
+}
+
+/* Lodgings */
+#lodg_list {
+    margin-left: 2%;
+}
+
+#lodgings {
+    margin: 2% 10%;
+}
+
+#lodgings p {
+    padding: 0 5%;
+}
+
+/* Transportation */
+#transport {
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+#transport h3 {
+    padding-left: 10px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+}
+
+.buses {
+    display: flex;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+#lastUl {
+    margin: 2% 0;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    width: 15%;
+}
+
+.iconDescription {
+    display: none;
+    position: absolute;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background-color: rgba(210, 180, 140, 1);
+    border-radius: 10px;
+    margin-top: 12%;
+}
+
+.li:hover .iconDescription {
+    display: block;
+}
+
+/* Entertainment */
+.bottom_space {
+    margin-bottom: 2%;
+}
+
+/* Restaurants */
+#rest {
+    margin: 0 10% 2% 10%;
+}
+
+.rest1 {
+    display: flex;
+}
+
+.rest2 {
+    margin-left: 5%;
+}
+
+.rest2 button {
+    margin-top: 15px;
+}
+
+/* Grocery Stores */
+#grocery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grocery1 {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.grocery1 br {
+    margin-bottom: 10px;
+}
+
+.grocery1 ul {
+    padding-right: 5%;
+}
+
+.grocery2 {
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(165, 207, 233);
+    border-radius: 20px;
+    box-shadow: 7px 7px rgba(116, 116, 116, 0.7);
+}
+
+.grocery2 h3 {
+    font-size: 1.5em;
+    margin: 2%;
+}
+
+#center{
+    margin: 0 2%;
+}
+
+.cardImg {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.grocery1 p {
+    padding: 12px 0 15px 0;
+}
+
+.grocery_inside {
+    padding: 2%;
+}
+
+.grocery_btn {
+    align-content: center;
+    padding: 0px 10px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 15px;
+    background-color: lightblue;
+    box-shadow: 3px 3px #80bbc4;
+    color: #000000;
+}
+
+.grocery_btn:hover {
+    background-color: rgb(151, 210, 229);
+    box-shadow: 3px 3px #6a9ba3;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: peachpuff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footerAlpha {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.footer1 a h1 {
+    padding-top: 15px;
+}
+
+.footerPages1 {
+    display: flex;
+}
+
+.footerspace {
+    padding: 2px;
+}
+
+.footerDiv1 {
+    margin-right: 25px;
+}
+
+.footerDiv2 {
+    margin-left: 25px;
+}
+
+.footer2 {
+    margin-right: 90px;
+}
+
+.footer3 {
+    margin-right: 100px;
+}
+
+.social {
+    width: 35px;
+}
+
+footer h3 {
+    padding-bottom: 15px;
+}
+
+footer p {
+    font-family: main-text;
+}
